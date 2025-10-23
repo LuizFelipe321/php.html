@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML</title>
+</head>
+<body>
+
+    <form method="POST" action="index.php"> 
+        <h3>Cadastro</h3>
+        Nome: <input type="text" name="nome" id="nome" required><br>
+        E-mail: <input type="email" name="email" id="email" required><br>
+        Senha: <input type="password" name="senha" id="senha" required><br>
+        <button type="submit" id="enviar">Enviar</button>
+    </form> 
+
+    <hr>
+
+    <form action="indexDados.php" method="post">
+        <h3>Selecione as linguagens:</h3>
+        <input type="checkbox" name="linguagens[]" value="HTML"> HTML<br>
+        <input type="checkbox" name="linguagens[]" value="CSS"> CSS<br>
+        <input type="checkbox" name="linguagens[]" value="PHP"> PHP<br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
